@@ -21,4 +21,5 @@ jobs:
     - name: make 
       run: make -C Step_0_and_1/
     - name: valgrindcheck  
-      run: valgrind Step_0_and_1/all.out
+      run: chmod a+x ./Step_0_and_1/all.out
+           valgrind ./Step_0_and_1/all.out

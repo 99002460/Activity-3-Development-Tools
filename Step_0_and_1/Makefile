@@ -1,0 +1,18 @@
+TARGET=a.out
+OBJS=test.o src/cancat.o src/cmp.o src/factorial.o src/mystrcpy.o src/mystrlen.o src/palindrome.o src/prime.o src/bitmask.o
+TOPDIR=${PWD}
+
+CFLAGS=-I${TOPDIR}/inc
+
+all:$(TARGET)
+
+$(TARGET):$(OBJS)
+	gcc $^ -o $@
+
+%.o:src/%.c
+
+test.o:test.c
+
+clean:
+	rm -rf ${OBJS} ${TARGETS}
+

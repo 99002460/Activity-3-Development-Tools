@@ -1,0 +1,13 @@
+TARGET=all.out
+
+OBJS=test.o src/cancat.o src/cmp.c src/mystrcpy.o src/mystrlen.o
+
+TOPDIR=${PWD}
+
+LIBPATH=${PWD}/src
+
+all:all.out
+
+all.out: $(OBJS)
+	gcc $
+

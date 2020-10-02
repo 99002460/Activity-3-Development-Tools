@@ -18,7 +18,6 @@ jobs:
       run: |
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
-    - name: make test
-      run: |
-        make test -C Activity-3-Development-Tools/Step_0_and_1
-        valgrind ./Activity-3-Development-Tools/Step_0_and_1/test.out
+    - name: make 
+      run: make -C Step_0_and_1/
+           valgrind Step_0_and_1/all.out

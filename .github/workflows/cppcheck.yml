@@ -11,7 +11,7 @@ jobs:
       - name: Install cppcheck
         run: sudo apt-get -y install cppcheck
       - name: Cppcheck code
-        run: cppcheck Step_0_and_1/*.c
-        run: cppcheck Step_0_and_1/src/*.c
-        run: cppcheck Step_2_staticlib/src/*.c
-        run: cppcheck Step_3_dynamiclib/src/*.c
+        run: cppcheck Step_0_and_1/
+        run: cppcheck Step_0_and_1/src/
+        run: cppcheck Step_2_staticlib/src/
+        run: cppcheck Step_3_dynamiclib/src/

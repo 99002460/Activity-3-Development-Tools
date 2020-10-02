@@ -23,4 +23,4 @@ jobs:
     - name: valgrindcheck  
       run: chmod a+x ./Step_0_and_1/all.out
     - name: valgrindcheck1  
-           valgrind ./Step_0_and_1/all.out
+      run: valgrind ./Step_0_and_1/all.out

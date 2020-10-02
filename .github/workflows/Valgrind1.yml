@@ -20,4 +20,4 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make 
       run: make -C Step_0_and_1/
-           valgrind Step_0_and_1/all.out
+           valgrind ./Step_0_and_1/all.out

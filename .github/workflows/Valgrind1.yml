@@ -2,9 +2,9 @@ name: Valgrind
 
 on:
   push:
-    branches: [ main ]
+    branches: [ master ]
   pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -20,4 +20,5 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make 
       run: make -C Step_0_and_1/
-           valgrind ./Step_0_and_1/all.out
+    - name: valgrindcheck  
+      run: valgrind ./Step_0_and_1/all.out

@@ -13,6 +13,5 @@ jobs:
       - name: Cppcheck code
         run: cppcheck Step_0_and_1/*.c
         run: cppcheck Step_0_and_1/src/*.c
-        
         run: cppcheck Step_2_staticlib/src/*.c
         run: cppcheck Step_3_dynamiclib/src/*.c

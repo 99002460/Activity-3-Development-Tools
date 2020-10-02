@@ -7,6 +7,6 @@
 ![Valgrind](https://github.com/99002460/Activity-3-Development-Tools/workflows/Valgrind/badge.svg?branch=main)
 
 |Build|cppcheck|Valgrind|Codacy|
-|: --:|: --:|:- -:|:- -:|
+|:--:|:--:|:--:|:--:|
 
 
